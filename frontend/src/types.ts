@@ -10,3 +10,8 @@ export interface MeetingResult {
   key_points: string[];
   action_items: ActionItem[];
 }
+
+export interface ChatMessage {
+  role: "user" | "assistant";
+  content: string;
+}
