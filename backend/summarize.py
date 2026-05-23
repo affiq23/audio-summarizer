@@ -1,5 +1,7 @@
-from openai import OpenAI
 import json
+
+from openai import OpenAI
+
 
 def summarize_transcript(transcript: str) -> dict:
     client = OpenAI()
@@ -16,7 +18,7 @@ Return only valid JSON, no markdown.
 """
     response = client.chat.completions.create(
         model="gpt-4o",
-        messages=[{ "role": "user", "content": prompt }],
-        response_format={ "type": "json_object" }
+        messages=[{"role": "user", "content": prompt}],
+        response_format={"type": "json_object"},
     )
     return json.loads(response.choices[0].message.content)

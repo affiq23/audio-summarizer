@@ -15,3 +15,10 @@ export interface ChatMessage {
   role: "user" | "assistant";
   content: string;
 }
+
+export interface SessionMeta {
+  session_id: string;
+  filename: string;
+  created_at: string;
+  result: MeetingResult;
+}
