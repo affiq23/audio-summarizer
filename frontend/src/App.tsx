@@ -106,7 +106,7 @@ export default function App() {
       <style>{css}</style>
       <div className="app">
         <header className="header">
-          <span className="logo">⬡ recapio</span>
+          <span className="logo"></span>
           {appState !== "idle" && (
             <button className="btn-ghost" onClick={handleReset}>← New Meeting</button>
           )}
