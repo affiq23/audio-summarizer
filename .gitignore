@@ -3,3 +3,4 @@ __pycache__/
 venv/
 backend/meetings.db
 backend/chroma_store/
+CLAUDE.md
